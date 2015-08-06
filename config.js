@@ -23,6 +23,7 @@ System.config({
     "angular2": "npm:angular2@2.0.0-alpha.33",
     "es6-shim": "github:es-shims/es6-shim@0.33.0",
     "reflect-metadata": "npm:reflect-metadata@0.1.0",
+    "text": "github:systemjs/plugin-text@0.0.2",
     "typescript": "github:mhegazy/typescript@v1.5-beta2",
     "zone.js": "npm:zone.js@0.5.2",
     "github:jspm/nodelibs-assert@0.1.0": {

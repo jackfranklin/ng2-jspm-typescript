@@ -1,0 +1,8 @@
+<p>My name: {{ name }}</p>
+<ul>
+  <li *ng-for="#name of friends">
+    {{ name }}
+  </li>
+</ul>
+<input #friendtext />
+<button (click)="addFriend(friendtext.value)">Add Friend</button>
