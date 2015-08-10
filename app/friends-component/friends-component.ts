@@ -1,3 +1,5 @@
+///<reference path='../../node_modules/immutable/dist/Immutable.d.ts'/>
+
 import {Component, View, NgFor} from 'angular2/angular2';
 import template from './friends-component.template.html!text';
 
@@ -12,7 +14,7 @@ import { List } from 'immutable';
 })
 export default class FriendsComponent {
   name: string;
-  friends: Array<string>;
+  friends: List<string>;
 
   constructor() {
     this.name = 'Jack';
