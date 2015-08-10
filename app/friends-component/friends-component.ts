@@ -1,6 +1,8 @@
 import {Component, View, NgFor} from 'angular2/angular2';
 import template from './friends-component.template.html!text';
 
+import { List } from 'immutable';
+
 @Component({
   selector: 'friends-list',
 })
@@ -14,6 +16,10 @@ export default class FriendsComponent {
 
   constructor() {
     this.name = 'Jack';
-    this.friends = ['Sam', 'Max', 'Jamie'];
+    this.friends = List(['Jack', 'Sam', 'Max']);
+  }
+
+  addFriend(name: string) {
+    this.friends = this.friends.push(name);
   }
 }
